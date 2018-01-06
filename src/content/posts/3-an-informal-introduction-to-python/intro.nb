@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5704,        134]
-NotebookOptionsPosition[      5032,        116]
-NotebookOutlinePosition[      5463,        133]
-CellTagsIndexPosition[      5420,        130]
+NotebookDataLength[      6073,        146]
+NotebookOptionsPosition[      5273,        125]
+NotebookOutlinePosition[      5704,        142]
+CellTagsIndexPosition[      5661,        139]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,15 +21,16 @@ Notebook[{
 Cell[BoxData[
  RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
   RowBox[{
-   RowBox[{"\"\<Title\>\"", "\[Rule]", "\"\<Preface\>\""}], ",", 
-   "\[IndentingNewLine]", 
+   RowBox[{
+   "\"\<Title\>\"", "\[Rule]", "\"\<An Informal Introduction to Python\>\""}],
+    ",", "\[IndentingNewLine]", 
    RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
    "\[IndentingNewLine]", 
    RowBox[{
    "\"\<Path\>\"", "\[Rule]", "\"\<An Informal Introduction to Python\>\""}], 
    ",", "\[IndentingNewLine]", 
    RowBox[{"\"\<ID\>\"", "\[Rule]", 
-    RowBox[{"{", "\"\<3.0\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", "\"\<3\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
    RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
    RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
    RowBox[{"\"\<Authors\>\"", "\[Rule]", 
@@ -50,9 +51,16 @@ Cell[BoxData[
    3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
    3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
    3.724185921419598*^9}, {3.724186346314814*^9, 3.724186374242176*^9}, {
-   3.724188068778384*^9, 
-   3.72418809546212*^9}},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+   3.724188068778384*^9, 3.72418809546212*^9}, {3.7242589801460953`*^9, 
+   3.724259002333983*^9}},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
 8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["An Informal Introduction to Python", "Section",
+ CellChangeTimes->{
+  3.724258984489603*^9},ExpressionUUID->"d28a8b1d-5832-433b-972e-\
+ca3af5531ab4"],
 
 Cell[TextData[{
  "In the following examples, input and output are distinguished by the \
@@ -81,8 +89,8 @@ Cell[TextData[{
  "Many of the examples in this manual, even those entered at the interactive \
 prompt, include comments. Comments in Python start with the hash character, \
 ",
- Cell[BoxData["#"], "InlineText", "InlineInput",
-  FormatType->"StandardForm",ExpressionUUID->
+ Cell[BoxData[
+ "#"], "InlineText", "InlineInput",ExpressionUUID->
   "e72683d0-f2be-4401-923f-6ac09ff24186"],
  ", and extend to the end of the physical line. A comment may appear at the \
 start of a line or following whitespace or code, but not within a string \
@@ -113,6 +121,7 @@ Cell[BoxData[{"python", "\n",
  CellChangeTimes->{{3.724188176955962*^9, 
   3.7241881878445168`*^9}},ExpressionUUID->"43e1b591-6459-49b5-9976-\
 906095ae35d1"]
+}, Open  ]]
 },
 WindowSize->{808, 754},
 WindowMargins->{{16, Automatic}, {Automatic, 0}},
@@ -132,10 +141,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1931, 34, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
-Cell[2492, 56, 970, 21, 104, "Text",ExpressionUUID->"80cf2552-9bc7-4897-be38-32400e2db31a"],
-Cell[3465, 79, 800, 15, 127, "Text",ExpressionUUID->"f6cfbad1-f895-4d4a-b06e-926e48558053"],
-Cell[4268, 96, 760, 18, 170, "FencedCode",ExpressionUUID->"43e1b591-6459-49b5-9976-906095ae35d1"]
+Cell[558, 20, 2008, 35, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2591, 59, 155, 3, 62, "Section",ExpressionUUID->"d28a8b1d-5832-433b-972e-ca3af5531ab4"],
+Cell[2749, 64, 970, 21, 104, "Text",ExpressionUUID->"80cf2552-9bc7-4897-be38-32400e2db31a"],
+Cell[3722, 87, 772, 15, 127, "Text",ExpressionUUID->"f6cfbad1-f895-4d4a-b06e-926e48558053"],
+Cell[4497, 104, 760, 18, 170, "FencedCode",ExpressionUUID->"43e1b591-6459-49b5-9976-906095ae35d1"]
+}, Open  ]]
 }
 ]
 *)

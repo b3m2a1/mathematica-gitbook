@@ -1,10 +1,10 @@
 Title: Whetting Your Appetite
 Authors: 
 Categories: python
-Date: 2018-01-05 16:15:00
+Date: 2018-01-06 11:49:24
 ID: 1
-Modified: 2018-01-05 16:15:00
-Path: 
+Modified: 2018-01-06 11:49:24
+Path: Whetting Your Appetite
 Slug: whetting-your-appetite
 Tags: appetite
 
