@@ -1,0 +1,197 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7476,        189]
+NotebookOptionsPosition[      6207,        163]
+NotebookOutlinePosition[      6638,        180]
+CellTagsIndexPosition[      6595,        177]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"\"\<Title\>\"", "\[Rule]", "\"\<Source Code Encoding\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+   "\"\<Path\>\"", "\[Rule]", 
+    "\"\<Using the Python Interpreter/The Interpreter and Its \
+Environment\>\""}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<ID\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<2.2.1\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Authors\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<python\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Tags\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<interpreter\>\"", "}"}]}]}], "\[IndentingNewLine]", 
+  "\[RightAssociation]"}]], "Metadata",
+ CellChangeTimes->{{3.7230674328716917`*^9, 3.723067452190956*^9}, {
+   3.7230679580568*^9, 3.7230680128473673`*^9}, {3.7232007087815647`*^9, 
+   3.7232007883818817`*^9}, 3.723201146733818*^9, {3.723203002317672*^9, 
+   3.723203008852455*^9}, {3.723203499603772*^9, 3.7232035545127563`*^9}, {
+   3.723251256681574*^9, 3.723251262240631*^9}, {3.723348490300707*^9, 
+   3.723348528182694*^9}, {3.723434617203232*^9, 3.7234346495926113`*^9}, 
+   3.723434738570012*^9, {3.723435106241599*^9, 3.723435134392212*^9}, {
+   3.7234355085797987`*^9, 3.723435549502858*^9}, {3.723435626994491*^9, 
+   3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
+   3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
+   3.724185921419598*^9}, {3.724186346314814*^9, 3.724186374242176*^9}, {
+   3.72418652223486*^9, 3.724186533622813*^9}, {3.724187688953513*^9, 
+   3.724187719102703*^9}},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["Source Code Encoding", "Section",
+ CellChangeTimes->{
+  3.724187736756908*^9},ExpressionUUID->"8d192e24-81f7-4bee-af63-\
+e124925414d6"],
+
+Cell["\<\
+By default, Python source files are treated as encoded in UTF-8. In that \
+encoding, characters of most languages in the world can be used \
+simultaneously in string literals, identifiers and comments \[LongDash] \
+although the standard library only uses ASCII characters for identifiers, a \
+convention that any portable code should follow. To display all these \
+characters properly, your editor must recognize that the file is UTF-8, and \
+it must use a font that supports all the characters in the file.\
+\>", "Text",
+ CellChangeTimes->{
+  3.724187744258885*^9},ExpressionUUID->"3a710fca-6e66-49f5-8814-\
+7f09cd135dfd"],
+
+Cell["\<\
+To declare an encoding other than the default one, a special comment line \
+should be added as the first line of the file. The syntax is as follows:\
+\>", "Text",
+ CellChangeTimes->{
+  3.724187754378224*^9},ExpressionUUID->"ccabf5c8-d08e-4f93-b9fd-\
+7ac151f23c90"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{"#", " ", "-", 
+  RowBox[{"*", 
+   RowBox[{"-", " ", 
+    RowBox[{"coding", ":", " ", 
+     RowBox[{"encoding", " ", "-", 
+      RowBox[{"*", "-"}]}]}]}]}]}]}], "FencedCode",
+ CellChangeTimes->{{3.724187764426099*^9, 
+  3.724187773179864*^9}},ExpressionUUID->"250e6899-90f6-4632-9ec0-\
+a8be020f5257"],
+
+Cell[TextData[{
+ "where encoding is one of the valid ",
+ ButtonBox["codecs",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/library/codecs.html#module-codecs"], None},
+  
+  ButtonNote->"https://docs.python.org/3/library/codecs.html#module-codecs"],
+ " supported by Python."
+}], "Text",
+ CellChangeTimes->{{3.724187779871284*^9, 
+  3.724187792067315*^9}},ExpressionUUID->"0bb73f6c-cb48-4596-bb75-\
+01b2ffd4e622"],
+
+Cell["\<\
+For example, to declare that Windows-1252 encoding is to be used, the first \
+line of your source code file should be:\
+\>", "Text",
+ CellChangeTimes->{
+  3.724187802528997*^9},ExpressionUUID->"5c4d850a-b606-4b6b-8146-\
+e7d53a9b10d9"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{"#", " ", "-", 
+  RowBox[{"*", 
+   RowBox[{"-", " ", 
+    RowBox[{"coding", ":", " ", 
+     RowBox[{"cp", "-", "1252", " ", "-", 
+      RowBox[{"*", "-"}]}]}]}]}]}]}], "FencedCode",
+ CellChangeTimes->{{3.724187764426099*^9, 3.724187773179864*^9}, 
+   3.724187822639388*^9},ExpressionUUID->"b30be273-7459-4607-9eea-\
+1488848a3d46"],
+
+Cell[TextData[{
+ "One exception to the first line rule is when the source code starts with a ",
+ ButtonBox["UNIX \[OpenCurlyDoubleQuote]shebang\[CloseCurlyDoubleQuote] line",
+  
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/tutorial/appendix.html#tut-scripts"], None},
+  ButtonNote->
+   "https://docs.python.org/3/tutorial/appendix.html#tut-scripts"],
+ ". In this case, the encoding declaration should be added as the second line \
+of the file. For example:"
+}], "Text",
+ CellChangeTimes->{{3.724187833584957*^9, 
+  3.724187845011986*^9}},ExpressionUUID->"93a80250-3609-4cb4-93d0-\
+f58cca11fe5e"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"#", "!"}], "/", "usr"}], "/", "bin"}], "/", "env"}], " ", 
+  "python3"}], "\n", 
+ RowBox[{"#", " ", "-", 
+  RowBox[{"*", 
+   RowBox[{"-", " ", 
+    RowBox[{"coding", ":", " ", 
+     RowBox[{"cp", "-", "1252", " ", "-", 
+      RowBox[{"*", "-"}]}]}]}]}]}]}], "FencedCode",
+ CellChangeTimes->{{3.724187851074108*^9, 
+  3.7241878526385927`*^9}},ExpressionUUID->"ff68a5ab-4332-4a6f-aa27-\
+6bc78d3ef1e8"]
+}, Open  ]]
+},
+WindowSize->{808, 754},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"BTools"}, "MarkdownNotebook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2024, 35, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2607, 59, 141, 3, 62, "Section",ExpressionUUID->"8d192e24-81f7-4bee-af63-e124925414d6"],
+Cell[2751, 64, 633, 11, 127, "Text",ExpressionUUID->"3a710fca-6e66-49f5-8814-7f09cd135dfd"],
+Cell[3387, 77, 274, 6, 58, "Text",ExpressionUUID->"ccabf5c8-d08e-4f93-b9fd-7ac151f23c90"],
+Cell[3664, 85, 340, 9, 56, "FencedCode",ExpressionUUID->"250e6899-90f6-4632-9ec0-a8be020f5257"],
+Cell[4007, 96, 441, 12, 35, "Text",ExpressionUUID->"0bb73f6c-cb48-4596-bb75-01b2ffd4e622"],
+Cell[4451, 110, 244, 6, 58, "Text",ExpressionUUID->"5c4d850a-b606-4b6b-8146-e7d53a9b10d9"],
+Cell[4698, 118, 370, 9, 56, "FencedCode",ExpressionUUID->"b30be273-7459-4607-9eea-1488848a3d46"],
+Cell[5071, 129, 627, 14, 58, "Text",ExpressionUUID->"93a80250-3609-4cb4-93d0-f58cca11fe5e"],
+Cell[5701, 145, 490, 15, 75, "FencedCode",ExpressionUUID->"ff68a5ab-4332-4a6f-aa27-6bc78d3ef1e8"]
+}, Open  ]]
+}
+]
+*)
+

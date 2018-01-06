@@ -1,0 +1,178 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6930,        170]
+NotebookOptionsPosition[      6030,        148]
+NotebookOutlinePosition[      6461,        165]
+CellTagsIndexPosition[      6418,        162]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"\"\<Title\>\"", "\[Rule]", "\"\<Interactive Mode\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+   "\"\<Path\>\"", "\[Rule]", 
+    "\"\<Using the Python Interpreter/Invoking the Interpreter\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<ID\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<2.1.2\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Authors\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<python\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Tags\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<interpreter\>\"", "}"}]}]}], "\[IndentingNewLine]", 
+  "\[RightAssociation]"}]], "Metadata",
+ CellChangeTimes->{{3.7230674328716917`*^9, 3.723067452190956*^9}, {
+   3.7230679580568*^9, 3.7230680128473673`*^9}, {3.7232007087815647`*^9, 
+   3.7232007883818817`*^9}, 3.723201146733818*^9, {3.723203002317672*^9, 
+   3.723203008852455*^9}, {3.723203499603772*^9, 3.7232035545127563`*^9}, {
+   3.723251256681574*^9, 3.723251262240631*^9}, {3.723348490300707*^9, 
+   3.723348528182694*^9}, {3.723434617203232*^9, 3.7234346495926113`*^9}, 
+   3.723434738570012*^9, {3.723435106241599*^9, 3.723435134392212*^9}, {
+   3.7234355085797987`*^9, 3.723435549502858*^9}, {3.723435626994491*^9, 
+   3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
+   3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
+   3.724185921419598*^9}, {3.724186346314814*^9, 3.724186374242176*^9}, {
+   3.72418652223486*^9, 3.724186533622813*^9}, {3.724187222488105*^9, 
+   3.7241872258273993`*^9}},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["Interactive Mode", "Section",
+ CellChangeTimes->{
+  3.724186060348362*^9, {3.7241865355344477`*^9, 3.724186538462675*^9}, 
+   3.724187227575474*^9},ExpressionUUID->"1b1af23c-2a3e-46a0-8c04-\
+8608d35d126e"],
+
+Cell[TextData[{
+ "When commands are read from a tty, the interpreter is said to be in ",
+ StyleBox["interactive mode",
+  FontSlant->"Italic"],
+ ". In this mode it prompts for the next command with the ",
+ StyleBox["primary prompt",
+  FontSlant->"Italic"],
+ ", usually three greater-than signs (",
+ Cell[BoxData[">>>"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "5c0ce22f-7c7a-4a47-94f4-2a80dab379f4"],
+ "); for continuation lines it prompts with the ",
+ StyleBox["secondary prompt",
+  FontSlant->"Italic"],
+ ", by default three dots (",
+ Cell[BoxData["..."], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "10ac55b3-67d8-4150-a004-ba7e2227f8ca"],
+ "). The interpreter prints a welcome message stating its version number and \
+a copyright notice before printing the first prompt:"
+}], "Text",
+ CellChangeTimes->{{3.724186549622031*^9, 3.7241865607556067`*^9}, {
+   3.724186591719151*^9, 3.7241865920470343`*^9}, {3.724186764240349*^9, 
+   3.724186782138215*^9}, {3.724186866468451*^9, 3.724186866737535*^9}, 
+   3.7241869823775167`*^9, {3.724187095805154*^9, 3.724187176925829*^9}, {
+   3.724187233308832*^9, 
+   3.7241872414698*^9}},ExpressionUUID->"2fea54e4-1925-4a0c-965e-\
+28d406906fbd"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{"$", " ", "python3", ".6"}], "\n", 
+ RowBox[{"Python", " ", "3.6", " ", 
+  RowBox[{"(", 
+   RowBox[{"default", ",", " ", 
+    RowBox[{"Sep", " ", "16", " ", "2015"}], ",", " ", 
+    RowBox[{"09", ":", "25", ":", "04"}]}], ")"}]}], "\n", 
+ RowBox[{
+  RowBox[{"[", 
+   RowBox[{"GCC", " ", "4.8", ".2"}], "]"}], " ", "on", " ", 
+  "linux"}], "\n", 
+ RowBox[{
+  RowBox[{"Type", " ", "\"\<help\>\""}], ",", " ", "\"\<copyright\>\"", ",", 
+  " ", 
+  RowBox[{
+  "\"\<credits\>\"", " ", "or", " ", "\"\<license\>\"", " ", "for", " ", 
+   "more", " ", 
+   RowBox[{"information", "."}]}]}], "\n", ">>>"}], "FencedCode",
+ CellChangeTimes->{{3.724187274514*^9, 3.724187304169848*^9}, {
+  3.724187348228467*^9, 
+  3.724187359488608*^9}},ExpressionUUID->"36c5114f-9c79-4d1a-a10c-\
+f6066dee9772"],
+
+Cell[TextData[{
+ "Continuation lines are needed when entering a multi-line construct. As an \
+example, take a look at this ",
+ ButtonBox["if",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/reference/compound_stmts.html#if"], None},
+  ButtonNote->"https://docs.python.org/3/reference/compound_stmts.html#if"],
+ " statement:"
+}], "Text",
+ CellChangeTimes->{{3.7241873103681297`*^9, 
+  3.7241873214590178`*^9}},ExpressionUUID->"a929ed3b-187e-4259-baa1-\
+f95a8a27a506"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{"the_world_is_flat", " ", "=", " ", "True"}]}], "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{"if", " ", "the_world", "_is", 
+   RowBox[{"_flat", ":", "\n", 
+    RowBox[{"...", "     ", "print", 
+     RowBox[{"(", "\"\<Be careful not to fall off!\>\"", ")"}]}]}]}]}], "\n", 
+
+ RowBox[{"...", "\n"}], "\n", 
+ RowBox[{"Be", " ", "careful", " ", "not", " ", "to", " ", "fall", " ", 
+  RowBox[{"off", "!"}]}]}], "FencedCode",
+ CellChangeTimes->{{3.724187274514*^9, 3.724187333366165*^9}, 
+   3.724187461883787*^9},ExpressionUUID->"928c0760-4881-4e63-8860-\
+77b4237ad589"]
+}, Open  ]]
+},
+WindowSize->{808, 754},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"BTools"}, "MarkdownNotebook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2013, 35, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2596, 59, 211, 4, 62, "Section",ExpressionUUID->"1b1af23c-2a3e-46a0-8c04-8608d35d126e"],
+Cell[2810, 65, 1255, 27, 104, "Text",ExpressionUUID->"2fea54e4-1925-4a0c-965e-28d406906fbd"],
+Cell[4068, 94, 821, 21, 132, "FencedCode",ExpressionUUID->"36c5114f-9c79-4d1a-a10c-f6066dee9772"],
+Cell[4892, 117, 496, 12, 58, "Text",ExpressionUUID->"a929ed3b-187e-4259-baa1-f95a8a27a506"],
+Cell[5391, 131, 623, 14, 151, "FencedCode",ExpressionUUID->"928c0760-4881-4e63-8860-77b4237ad589"]
+}, Open  ]]
+}
+]
+*)
+

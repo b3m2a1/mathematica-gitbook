@@ -1,0 +1,284 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11120,        276]
+NotebookOptionsPosition[      9573,        247]
+NotebookOutlinePosition[     10004,        264]
+CellTagsIndexPosition[      9961,        261]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"\"\<Title\>\"", "\[Rule]", "\"\<Invoking the Interpreter\>\""}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+   "\"\<Path\>\"", "\[Rule]", 
+    "\"\<Using the Python Interpreter/Invoking the Interpreter\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<ID\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<2.1\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Authors\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<python\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Tags\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<interpreter\>\"", "}"}]}]}], "\[IndentingNewLine]", 
+  "\[RightAssociation]"}]], "Metadata",
+ CellChangeTimes->{{3.7230674328716917`*^9, 3.723067452190956*^9}, {
+   3.7230679580568*^9, 3.7230680128473673`*^9}, {3.7232007087815647`*^9, 
+   3.7232007883818817`*^9}, 3.723201146733818*^9, {3.723203002317672*^9, 
+   3.723203008852455*^9}, {3.723203499603772*^9, 3.7232035545127563`*^9}, {
+   3.723251256681574*^9, 3.723251262240631*^9}, {3.723348490300707*^9, 
+   3.723348528182694*^9}, {3.723434617203232*^9, 3.7234346495926113`*^9}, 
+   3.723434738570012*^9, {3.723435106241599*^9, 3.723435134392212*^9}, {
+   3.7234355085797987`*^9, 3.723435549502858*^9}, {3.723435626994491*^9, 
+   3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
+   3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
+   3.724185921419598*^9}, {3.724186346314814*^9, 3.724186374242176*^9}, {
+   3.7241892734937763`*^9, 
+   3.7241892737471724`*^9}},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["Invoking the Interpreter", "Section",
+ CellChangeTimes->{
+  3.724186060348362*^9},ExpressionUUID->"1b1af23c-2a3e-46a0-8c04-\
+8608d35d126e"],
+
+Cell[TextData[{
+ "The Python interpreter is usually installed as ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"/", "usr"}], "/", "local"}], "/", "bin"}], "/", "python3"}], 
+   ".6"}]], "InlineText",ExpressionUUID->
+  "2c53a366-7edb-4aa1-983b-91dfd7125d64"],
+ " on those machines where it is available; putting ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    RowBox[{"/", "usr"}], "/", "local"}], "/", "bin"}]], "InlineText",
+  ExpressionUUID->"1fee19f0-3449-4a26-bc54-cce100a56841"],
+ " in your Unix shell\[CloseCurlyQuote]s search path makes it possible to \
+start it by typing the command:"
+}], "Text",
+ CellChangeTimes->{{3.724186068105592*^9, 
+  3.724186104651478*^9}},ExpressionUUID->"1b575089-e8f2-4ba3-98dc-\
+facdabdb3321"],
+
+Cell[BoxData[{"bash", "\n", 
+ RowBox[{"python3", ".6"}]}], "FencedCode",
+ CellChangeTimes->{
+  3.7241861162037487`*^9, {3.7241893608971443`*^9, 
+   3.724189361960882*^9}},ExpressionUUID->"6d08a5a9-03a8-47bd-9f96-\
+11d81fc15eae"],
+
+Cell[TextData[{
+ "to the shell. Since the choice of the directory where the interpreter lives \
+is an installation option, other places are possible; check with your local \
+Python guru or system administrator. (E.g., ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    RowBox[{"/", "usr"}], "/", "local"}], "/", "python"}]], "InlineText",
+  ExpressionUUID->"109712c6-a57b-40c4-9704-862b45f59f2b"],
+ " is a popular alternative location.)"
+}], "Text",
+ CellChangeTimes->{{3.724186168675097*^9, 3.724186173514289*^9}, {
+  3.7241892880520353`*^9, 
+  3.724189288638752*^9}},ExpressionUUID->"4ed433ca-aecb-4e7e-ad5d-\
+da6b638f5f64"],
+
+Cell[TextData[{
+ "On Windows machines, the Python installation is usually placed in ",
+ Cell[BoxData[
+  RowBox[{"C", ":", 
+   RowBox[{"\\", "Python36"}]}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "82eaeac4-5be7-4f38-9599-c274fef6cfba"],
+ ", though you can change this when you\[CloseCurlyQuote]re running the \
+installer. To add this directory to your path, you can type the following \
+command into the command prompt in a DOS box:"
+}], "Text",
+ CellChangeTimes->{{3.7241861969484377`*^9, 3.724186198657439*^9}, {
+  3.72418933293149*^9, 
+  3.724189342044395*^9}},ExpressionUUID->"d13a6a58-ed81-4a63-b938-\
+8bfc4fea9def"],
+
+Cell[BoxData[{"bash", "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"set", " ", "path"}], "=", 
+   RowBox[{"%", "path", "%"}]}], ";", 
+  RowBox[{"C", ":", 
+   RowBox[{"\\", "python36"}]}]}]}], "FencedCode",
+ CellChangeTimes->{{3.7241861969484377`*^9, 3.724186202438985*^9}, {
+  3.724189355136969*^9, 
+  3.7241893640970173`*^9}},ExpressionUUID->"6065e480-9a8d-4979-ac4c-\
+4b839e03c5f3"],
+
+Cell[TextData[{
+ "Typing an end-of-file character (",
+ Cell[BoxData[
+  RowBox[{"Control", "-", "D"}]], "InlineText",ExpressionUUID->
+  "5ef34396-3181-42e9-9a15-241c63aa1c73"],
+ " on Unix, ",
+ Cell[BoxData[
+  RowBox[{"Control", "-", "Z"}]], "InlineText",ExpressionUUID->
+  "7ae1e3ca-0e10-4286-bc6d-78565fd3072e"],
+ " on Windows) at the primary prompt causes the interpreter to exit with a \
+zero exit status. If that doesn't work, you can exit the interpreter by \
+typing the following command: ",
+ Cell[BoxData[
+  RowBox[{"quit", 
+   RowBox[{"(", ")"}]}]], "InlineText",ExpressionUUID->
+  "061cc433-2c65-4d57-82ec-097069bc1918"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.7241861969484377`*^9, 3.724186226170969*^9}, {
+  3.724189307399416*^9, 
+  3.724189308310968*^9}},ExpressionUUID->"3907bed3-b486-46da-909c-\
+980359d80c41"],
+
+Cell[TextData[{
+ "The interpreter\[CloseCurlyQuote]s line-editing features include \
+interactive editing, history substitution and code completion on systems that \
+support readline. Perhaps the quickest check to see whether command line \
+editing is supported is typing ",
+ Cell[BoxData[
+  RowBox[{"Control", "-", "P"}]], "InlineText",ExpressionUUID->
+  "4e3c8c1d-445d-423f-afa9-11a9963f1f5d"],
+ " to the first Python prompt you get. If it beeps, you have command line \
+editing; see ",
+ ButtonBox["Appendix Interactive Input Editing and History Substitution",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/tutorial/interactive.html#tut-interacting"]\
+, None},
+  ButtonNote->
+   "https://docs.python.org/3/tutorial/interactive.html#tut-interacting"],
+ " for an introduction to the keys. If nothing appears to happen, or if ",
+ Cell[BoxData[
+  RowBox[{"^", "P"}]], "InlineText",ExpressionUUID->
+  "aed13dbf-9b50-41c0-bb9e-c46518975786"],
+ " is echoed, command line editing isn\[CloseCurlyQuote]t available; you\
+\[CloseCurlyQuote]ll only be able to use backspace to remove characters from \
+the current line."
+}], "Text",
+ CellChangeTimes->{{3.724186232106133*^9, 
+  3.724186273978178*^9}},ExpressionUUID->"10e13de6-c654-4809-9741-\
+0f925dca83d9"],
+
+Cell[TextData[{
+ "The interpreter operates somewhat like the Unix shell: when called with \
+standard input connected to a tty device, it reads and executes commands \
+interactively; when called with a file name argument or with a file as \
+standard input, it reads and executes a ",
+ StyleBox["script",
+  FontSlant->"Italic"],
+ " from that file."
+}], "Text",
+ CellChangeTimes->{
+  3.72418628478601*^9},ExpressionUUID->"0327b999-0c35-4747-af2f-25799671ecc1"],
+
+Cell[TextData[{
+ "Some Python modules are also useful as scripts. These can be invoked using ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{"python", " ", "-", 
+    RowBox[{"m", " ", 
+     RowBox[{"module", " ", "[", "arg", "]"}]}]}], " ", "..."}]], 
+  "InlineText",ExpressionUUID->"d4f17c3f-8197-45e6-acb1-30c4c76d141a"],
+ ",  which executes the source file for module as if you had spelled out its \
+full name on the command line."
+}], "Text",
+ CellChangeTimes->{{3.724186300401712*^9, 3.724186304112125*^9}, {
+  3.724189320137141*^9, 
+  3.724189320969181*^9}},ExpressionUUID->"482e6fb1-0a40-450a-9517-\
+43f2e26f2c41"],
+
+Cell[TextData[{
+ "When a script file is used, it is sometimes useful to be able to run the \
+script and enter interactive mode afterwards. This can be done by passing ",
+ ButtonBox["-i",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/using/cmdline.html#cmdoption-i"], None},
+  ButtonNote->"https://docs.python.org/3/using/cmdline.html#cmdoption-i"],
+ " before the script."
+}], "Text",
+ CellChangeTimes->{{3.724186317121325*^9, 
+  3.724186327307424*^9}},ExpressionUUID->"cda16c39-fd02-4ca1-aa3f-\
+15522eea591f"],
+
+Cell[TextData[{
+ "All command line options are described in ",
+ ButtonBox["Command line and environment",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/using/cmdline.html#using-on-general"], 
+    None},
+  ButtonNote->"https://docs.python.org/3/using/cmdline.html#using-on-general"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.7241863339288607`*^9, 
+  3.7241863415324297`*^9}},ExpressionUUID->"da9de1d3-97a3-4cd8-b7b2-\
+8c8b640bcef1"]
+}, Open  ]]
+},
+WindowSize->{808, 754},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"BTools"}, "MarkdownNotebook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1976, 35, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2559, 59, 145, 3, 62, "Section",ExpressionUUID->"1b1af23c-2a3e-46a0-8c04-8608d35d126e"],
+Cell[2707, 64, 764, 21, 83, "Text",ExpressionUUID->"1b575089-e8f2-4ba3-98dc-facdabdb3321"],
+Cell[3474, 87, 228, 5, 56, "FencedCode",ExpressionUUID->"6d08a5a9-03a8-47bd-9f96-11d81fc15eae"],
+Cell[3705, 94, 620, 14, 82, "Text",ExpressionUUID->"4ed433ca-aecb-4e7e-ad5d-da6b638f5f64"],
+Cell[4328, 110, 659, 14, 81, "Text",ExpressionUUID->"d13a6a58-ed81-4a63-b938-8bfc4fea9def"],
+Cell[4990, 126, 378, 10, 56, "FencedCode",ExpressionUUID->"6065e480-9a8d-4979-ac4c-4b839e03c5f3"],
+Cell[5371, 138, 823, 21, 83, "Text",ExpressionUUID->"3907bed3-b486-46da-909c-980359d80c41"],
+Cell[6197, 161, 1278, 27, 152, "Text",ExpressionUUID->"10e13de6-c654-4809-9741-0f925dca83d9"],
+Cell[7478, 190, 457, 10, 81, "Text",ExpressionUUID->"0327b999-0c35-4747-af2f-25799671ecc1"],
+Cell[7938, 202, 613, 14, 82, "Text",ExpressionUUID->"482e6fb1-0a40-450a-9517-43f2e26f2c41"],
+Cell[8554, 218, 540, 12, 58, "Text",ExpressionUUID->"cda16c39-fd02-4ca1-aa3f-15522eea591f"],
+Cell[9097, 232, 460, 12, 35, "Text",ExpressionUUID->"da9de1d3-97a3-4cd8-b7b2-8c8b640bcef1"]
+}, Open  ]]
+}
+]
+*)
+

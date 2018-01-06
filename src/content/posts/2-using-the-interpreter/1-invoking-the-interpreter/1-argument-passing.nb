@@ -1,0 +1,180 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6818,        172]
+NotebookOptionsPosition[      6210,        153]
+NotebookOutlinePosition[      6641,        170]
+CellTagsIndexPosition[      6598,        167]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"\"\<Title\>\"", "\[Rule]", "\"\<Argument Passing\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+   "\"\<Path\>\"", "\[Rule]", 
+    "\"\<Using the Python Interpreter/Invoking the Interpreter\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<ID\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<2.1.1\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Authors\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<python\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Tags\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<interpreter\>\"", "}"}]}]}], "\[IndentingNewLine]", 
+  "\[RightAssociation]"}]], "Metadata",
+ CellChangeTimes->{{3.7230674328716917`*^9, 3.723067452190956*^9}, {
+   3.7230679580568*^9, 3.7230680128473673`*^9}, {3.7232007087815647`*^9, 
+   3.7232007883818817`*^9}, 3.723201146733818*^9, {3.723203002317672*^9, 
+   3.723203008852455*^9}, {3.723203499603772*^9, 3.7232035545127563`*^9}, {
+   3.723251256681574*^9, 3.723251262240631*^9}, {3.723348490300707*^9, 
+   3.723348528182694*^9}, {3.723434617203232*^9, 3.7234346495926113`*^9}, 
+   3.723434738570012*^9, {3.723435106241599*^9, 3.723435134392212*^9}, {
+   3.7234355085797987`*^9, 3.723435549502858*^9}, {3.723435626994491*^9, 
+   3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
+   3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
+   3.724185921419598*^9}, {3.724186346314814*^9, 3.724186374242176*^9}, {
+   3.72418652223486*^9, 
+   3.724186533622813*^9}},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["Argument Passing", "Section",
+ CellChangeTimes->{
+  3.724186060348362*^9, {3.7241865355344477`*^9, 
+   3.724186538462675*^9}},ExpressionUUID->"1b1af23c-2a3e-46a0-8c04-\
+8608d35d126e"],
+
+Cell[TextData[{
+ "When known to the interpreter, the script name and additional arguments \
+thereafter are turned into a list of strings and assigned to the argv \
+variable in the ",
+ Cell[BoxData["sys"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "dea790de-52dc-459f-b161-1c32a4d3a3cf"],
+ " module. You can access this list by executing ",
+ Cell[BoxData[
+  RowBox[{"import", " ", "sys"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "aea8719c-5da7-4011-b936-b60e9fc5d49b"],
+ ". The length of the list is at least one; when no script and no arguments \
+are given, ",
+ Cell[BoxData[
+  RowBox[{"sys", ".", 
+   RowBox[{"argv", "[", "0", "]"}]}]], "InlineText",ExpressionUUID->
+  "d235ccd7-6bcf-42cc-9404-613884880661"],
+ " is an empty string. When the script name is given as ",
+ Cell[BoxData[
+  RowBox[{"'", "-", "'"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "fd38bc88-5d3c-4d01-9e35-f77b7acaa868"],
+ " (meaning standard input), ",
+ Cell[BoxData[
+  RowBox[{"sys", ".", 
+   RowBox[{"argv", "[", "0", "]"}]}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "da89fc32-9121-4b9e-94f9-1dfa0505acbe"],
+ " is set to ",
+ Cell[BoxData[
+  RowBox[{"'", "-", "'"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "9a9eb2d2-9003-4313-8a83-89d7adeec3b5"],
+ ". When ",
+ Cell[BoxData[
+  RowBox[{"-", "c"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "7f5c9243-52c1-4336-b380-7d5a0dd09324"],
+ " command is used, ",
+ Cell[BoxData[
+  RowBox[{"sys", ".", 
+   RowBox[{"argv", "[", "0", "]"}]}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "86dbc55f-5ca6-4269-8781-db530caec75e"],
+ " is set to ",
+ Cell[BoxData[
+  RowBox[{"'", "-", 
+   RowBox[{"c", "'"}]}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "53a21be2-90ca-4b10-b3f9-422cb9f196a1"],
+ ". When ",
+ Cell[BoxData[
+  RowBox[{"-", "m"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "d16fd907-29a8-4624-b957-ad86b9251003"],
+ " module is used, ",
+ Cell[BoxData[
+  RowBox[{"sys", ".", 
+   RowBox[{"argv", "[", "0", "]"}]}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "89fc5d91-a3e1-4290-a742-01250ac0f7a3"],
+ " is set to the full name of the located module. Options found after ",
+ Cell[BoxData[
+  RowBox[{"-", "c"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "231b750c-2203-408b-ad76-2f85acadaf92"],
+ " command or ",
+ Cell[BoxData[
+  RowBox[{"-", "m"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "d1c70d95-d0f9-4587-9334-6785c5b5aeef"],
+ " module are not consumed by the Python interpreter\[CloseCurlyQuote]s \
+option processing but left in ",
+ Cell[BoxData[
+  RowBox[{"sys", ".", "argv"}]], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "3e8464e3-9651-40b3-90af-1868282cc2f4"],
+ " for the command or module to handle."
+}], "Text",
+ CellChangeTimes->{{3.724186549622031*^9, 3.7241865607556067`*^9}, {
+   3.724186591719151*^9, 3.7241865920470343`*^9}, {3.724186764240349*^9, 
+   3.724186782138215*^9}, {3.724186866468451*^9, 3.724186866737535*^9}, 
+   3.7241869823775167`*^9, {3.724187095805154*^9, 
+   3.724187176925829*^9}},ExpressionUUID->"2fea54e4-1925-4a0c-965e-\
+28d406906fbd"]
+}, Open  ]]
+},
+WindowSize->{808, 754},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"BTools"}, "MarkdownNotebook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1965, 35, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2548, 59, 189, 4, 62, "Section",ExpressionUUID->"1b1af23c-2a3e-46a0-8c04-8608d35d126e"],
+Cell[2740, 65, 3454, 85, 174, "Text",ExpressionUUID->"2fea54e4-1925-4a0c-965e-28d406906fbd"]
+}, Open  ]]
+}
+]
+*)
+

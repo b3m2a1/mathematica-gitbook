@@ -1,0 +1,265 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10200,        257]
+NotebookOptionsPosition[      8922,        231]
+NotebookOutlinePosition[      9353,        248]
+CellTagsIndexPosition[      9310,        245]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"\"\<Title\>\"", "\[Rule]", "\"\<Numbers\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+   "\"\<Path\>\"", "\[Rule]", 
+    "\"\<An Informal Introduction to Python/Using Python as a \
+Calculator\>\""}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<ID\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<3.1.1\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Authors\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<python\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Tags\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<introduction\>\"", "}"}]}]}], "\[IndentingNewLine]", 
+  "\[RightAssociation]"}]], "Metadata",
+ CellChangeTimes->{{3.7230674328716917`*^9, 3.723067452190956*^9}, {
+   3.7230679580568*^9, 3.7230680128473673`*^9}, {3.7232007087815647`*^9, 
+   3.7232007883818817`*^9}, 3.723201146733818*^9, {3.723203002317672*^9, 
+   3.723203008852455*^9}, {3.723203499603772*^9, 3.7232035545127563`*^9}, {
+   3.723251256681574*^9, 3.723251262240631*^9}, {3.723348490300707*^9, 
+   3.723348528182694*^9}, {3.723434617203232*^9, 3.7234346495926113`*^9}, 
+   3.723434738570012*^9, {3.723435106241599*^9, 3.723435134392212*^9}, {
+   3.7234355085797987`*^9, 3.723435549502858*^9}, {3.723435626994491*^9, 
+   3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
+   3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
+   3.724185921419598*^9}, {3.724186346314814*^9, 3.724186374242176*^9}, {
+   3.724188068778384*^9, 3.72418809546212*^9}, {3.724188225189865*^9, 
+   3.7241882329202423`*^9}, {3.7241883899467087`*^9, 
+   3.724188398902533*^9}},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["Numbers", "Section",
+ CellChangeTimes->{
+  3.7241882375453167`*^9, {3.724188401526074*^9, 
+   3.724188402462384*^9}},ExpressionUUID->"a5dd9ab6-10de-456e-8814-\
+1757e2ce3ba5"],
+
+Cell[TextData[{
+ "The interpreter acts as a simple calculator: you can type an expression at \
+it and it will write the value. Expression syntax is straightforward: the \
+operators ",
+ Cell[BoxData[
+ "+"], "InlineText", "InlineInput",ExpressionUUID->
+  "93bba029-8145-4672-8983-ba305b3c82b1"],
+ ", ",
+ Cell[BoxData[
+ "-"], "InlineText", "InlineInput",ExpressionUUID->
+  "ade6b71b-9cca-4804-9b45-48728d701aca"],
+ ", ",
+ Cell[BoxData[
+ "*"], "InlineText", "InlineInput",ExpressionUUID->
+  "569ba295-b180-4fa7-b447-633d6f12b6d1"],
+ " and ",
+ Cell[BoxData[
+ "/"], "InlineText", "InlineInput",ExpressionUUID->
+  "c06dbdbe-0914-42b4-a374-83c9aaecdb04"],
+ " work just like in most other languages (for example, Pascal or C); \
+parentheses (",
+ Cell[BoxData[
+  RowBox[{"(", ")"}]], "InlineText", "InlineInput",ExpressionUUID->
+  "18d8518a-6c23-4f59-9643-1372203d57b8"],
+ ") can be used for grouping. For example:"
+}], "Text",
+ CellChangeTimes->{{3.724188410596594*^9, 
+  3.724188428418087*^9}},ExpressionUUID->"dd812fa6-f39b-4c7b-98b8-\
+22bd0741fbad"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{"2", " ", "+", " ", "2"}]}], "\n", "4", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{"50", " ", "-", " ", 
+   RowBox[{"5", "*", "6"}]}]}], "\n", "20", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"50", " ", "-", " ", 
+     RowBox[{"5", "*", "6"}]}], ")"}], " ", "/", " ", 
+   "4"}]}], "\n", "5.0", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{
+   RowBox[{"8", " ", "/", " ", "5"}], "  ", "#", " ", "division", " ", 
+   "always", " ", "returns", " ", "a", " ", "floating", " ", "point", " ", 
+   "number"}]}], "\n", "1.6"}], "FencedCode",
+ CellChangeTimes->{{3.7241884382551537`*^9, 
+  3.72418844341064*^9}},ExpressionUUID->"07394e2e-c987-4f5e-9b47-\
+8f61b14dc38e"],
+
+Cell[TextData[{
+ "The integer numbers (e.g. ",
+ Cell[BoxData["2"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "969e21f2-1964-456e-b1ac-46a0608654bb"],
+ ", ",
+ Cell[BoxData["4"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "386f6124-4f25-4d6d-a408-0ad51d38fb65"],
+ ", ",
+ Cell[BoxData["20"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "0955705e-470c-4f0b-a1f1-a51fbb57c0a2"],
+ ") have type ",
+ Cell[BoxData["int"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "dca5afb3-712b-462a-b2d7-8c25731df61b"],
+ ", the ones with a fractional part (e.g. ",
+ Cell[BoxData["5.0"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "a499a36e-0bf7-4dcb-a885-5bfa0bda4c70"],
+ ", ",
+ Cell[BoxData["1.6"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "a5753241-30f8-458f-a88a-5f90e6ce8d2b"],
+ ") have type ",
+ Cell[BoxData["float"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "402c6529-99bd-4042-a1c7-ab74fcf73a2e"],
+ ". We will see more about numeric types later in the tutorial."
+}], "Text",
+ CellChangeTimes->{{3.7241884512360697`*^9, 
+  3.724188480536351*^9}},ExpressionUUID->"9b363ce7-a21b-4e40-b8cf-\
+2331bbbf1879"],
+
+Cell[TextData[{
+ "Division (",
+ Cell[BoxData["/"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "fafdf376-f2d3-45f7-bf9a-c586ff83c022"],
+ ") always returns a ",
+ Cell[BoxData["float"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "b07037b3-4f2b-4016-ac3a-d80ffb7baca7"],
+ ". To do floor division and get an integer result (discarding any fractional \
+result) you can use the ",
+ Cell[BoxData["//"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "ce6c631b-c488-4872-bc44-b88c0b3d9e58"],
+ " operator; to calculate the remainder you can use ",
+ Cell[BoxData["%"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "f5fa6b96-95f1-47f4-8816-a36642153062"],
+ ":"
+}], "Text",
+ CellChangeTimes->{{3.7241884512360697`*^9, 
+  3.724188496608046*^9}},ExpressionUUID->"79177648-9315-4cca-8209-\
+1cd219fdcd6e"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{
+   RowBox[{"17", " ", "/", " ", "3"}], "  ", "#", " ", "classic", " ", 
+   "division", " ", "returns", " ", "a", " ", 
+   "float"}]}], "\n", "5.666666666666667", "\n", 
+ RowBox[{">>>", "\n", ">>>", " ", 
+  RowBox[{"17", " ", "//", " ", 
+   RowBox[{
+   "3", "  ", "#", " ", "floor", " ", "division", " ", "discards", " ", "the",
+     " ", "fractional", " ", "part"}]}]}], "\n", "5", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{
+  "17", " ", "%", " ", "3", "  ", "#", " ", "the", " ", "%", " ", "operator", 
+   " ", "returns", " ", "the", " ", "remainder", " ", "of", " ", "the", " ", 
+   "division"}]}], "\n", "2", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{
+   RowBox[{"5", " ", "*", " ", "3"}], " ", "+", " ", 
+   RowBox[{"2", "  ", "#", " ", "result", " ", "*", " ", "divisor"}], " ", 
+   "+", " ", "remainder"}]}], "\n", "17"}], "FencedCode",
+ CellChangeTimes->{{3.7241885070206547`*^9, 
+  3.724188510726075*^9}},ExpressionUUID->"95a4d8ef-397e-402b-a1f6-\
+7497299ce124"],
+
+Cell[TextData[{
+ "With Python, it is possible to use the ",
+ Cell[BoxData["**"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "390e9ca8-aa8b-4e97-b674-5506fdfe31d2"],
+ " operator to calculate powers:"
+}], "Text",
+ CellChangeTimes->{{3.724188520314042*^9, 
+  3.7241885265717278`*^9}},ExpressionUUID->"f89bf3c2-dff9-44c2-8667-\
+e68d795031b7"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{
+   RowBox[{"5", " ", "**", " ", "2"}], "  ", "#", " ", "5", " ", 
+   "squared"}]}], "\n", "25", "\n", 
+ RowBox[{">>>", " ", 
+  RowBox[{
+   RowBox[{"2", " ", "**", " ", "7"}], "  ", "#", " ", "2", " ", "to", " ", 
+   "the", " ", "power", " ", "of", " ", "7"}]}], "\n", "128"}], "FencedCode",
+ CellChangeTimes->{{3.724188532931992*^9, 
+  3.724188534016651*^9}},ExpressionUUID->"82e1ac98-5c4f-491b-9209-\
+0f1eae43e9d9"],
+
+Cell["etc.", "Text",
+ CellChangeTimes->{{3.724188543332818*^9, 
+  3.724188543939788*^9}},ExpressionUUID->"a5472042-2f3b-462a-b93d-\
+fe2e40c8218b"]
+}, Open  ]]
+},
+WindowSize->{808, 754},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"BTools"}, "MarkdownNotebook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2065, 36, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2648, 60, 180, 4, 62, "Section",ExpressionUUID->"a5dd9ab6-10de-456e-8814-1757e2ce3ba5"],
+Cell[2831, 66, 1043, 28, 81, "Text",ExpressionUUID->"dd812fa6-f39b-4c7b-98b8-22bd0741fbad"],
+Cell[3877, 96, 739, 19, 189, "FencedCode",ExpressionUUID->"07394e2e-c987-4f5e-9b47-8f61b14dc38e"],
+Cell[4619, 117, 1328, 33, 58, "Text",ExpressionUUID->"9b363ce7-a21b-4e40-b8cf-2331bbbf1879"],
+Cell[5950, 152, 918, 22, 58, "Text",ExpressionUUID->"79177648-9315-4cca-8209-1cd219fdcd6e"],
+Cell[6871, 176, 1028, 23, 208, "FencedCode",ExpressionUUID->"95a4d8ef-397e-402b-a1f6-7497299ce124"],
+Cell[7902, 201, 372, 9, 35, "Text",ExpressionUUID->"f89bf3c2-dff9-44c2-8667-e68d795031b7"],
+Cell[8277, 212, 480, 11, 113, "FencedCode",ExpressionUUID->"82e1ac98-5c4f-491b-9209-0f1eae43e9d9"],
+Cell[8760, 225, 146, 3, 35, "Text",ExpressionUUID->"a5472042-2f3b-462a-b93d-fe2e40c8218b"]
+}, Open  ]]
+}
+]
+*)
+
