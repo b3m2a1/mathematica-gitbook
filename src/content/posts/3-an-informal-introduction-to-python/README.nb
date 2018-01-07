@@ -1,0 +1,154 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6077,        146]
+NotebookOptionsPosition[      5277,        125]
+NotebookOutlinePosition[      5708,        142]
+CellTagsIndexPosition[      5665,        139]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+   "\"\<Title\>\"", "\[Rule]", "\"\<An Informal Introduction to Python\>\""}],
+    ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+   "\"\<Path\>\"", "\[Rule]", "\"\<An Informal Introduction to Python\>\""}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<ID\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<3.0\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Authors\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<python\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Tags\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<introduction\>\"", "}"}]}]}], "\[IndentingNewLine]", 
+  "\[RightAssociation]"}]], "Metadata",
+ CellChangeTimes->{{3.7230674328716917`*^9, 3.723067452190956*^9}, {
+   3.7230679580568*^9, 3.7230680128473673`*^9}, {3.7232007087815647`*^9, 
+   3.7232007883818817`*^9}, 3.723201146733818*^9, {3.723203002317672*^9, 
+   3.723203008852455*^9}, {3.723203499603772*^9, 3.7232035545127563`*^9}, {
+   3.723251256681574*^9, 3.723251262240631*^9}, {3.723348490300707*^9, 
+   3.723348528182694*^9}, {3.723434617203232*^9, 3.7234346495926113`*^9}, 
+   3.723434738570012*^9, {3.723435106241599*^9, 3.723435134392212*^9}, {
+   3.7234355085797987`*^9, 3.723435549502858*^9}, {3.723435626994491*^9, 
+   3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
+   3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
+   3.724185921419598*^9}, {3.724186346314814*^9, 3.724186374242176*^9}, {
+   3.724188068778384*^9, 3.72418809546212*^9}, 
+   3.724279550010516*^9},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["An Informal Introduction to Python", "Section",
+ CellChangeTimes->{
+  3.724280320638637*^9},ExpressionUUID->"5a8f7c94-4023-4d4f-98e4-\
+5d0016f1f937"],
+
+Cell[TextData[{
+ "In the following examples, input and output are distinguished by the \
+presence or absence of prompts (",
+ ButtonBox[">>>",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/glossary.html#term"], None},
+  ButtonNote->"https://docs.python.org/3/glossary.html#term"],
+ " and ",
+ ButtonBox["\[Ellipsis]",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.python.org/3/glossary.html#term-1"], None},
+  ButtonNote->"https://docs.python.org/3/glossary.html#term-1"],
+ "): to repeat the example, you must type everything after the prompt, when \
+the prompt appears; lines that do not begin with a prompt are output from the \
+interpreter. Note that a secondary prompt on a line by itself in an example \
+means you must type a blank line; this is used to end a multi-line command."
+}], "Text",
+ CellChangeTimes->{{3.724188108355196*^9, 
+  3.724188147867742*^9}},ExpressionUUID->"80cf2552-9bc7-4897-be38-\
+32400e2db31a"],
+
+Cell[TextData[{
+ "Many of the examples in this manual, even those entered at the interactive \
+prompt, include comments. Comments in Python start with the hash character, \
+",
+ Cell[BoxData["#"], "InlineText", "InlineInput",
+  FormatType->"StandardForm",ExpressionUUID->
+  "e72683d0-f2be-4401-923f-6ac09ff24186"],
+ ", and extend to the end of the physical line. A comment may appear at the \
+start of a line or following whitespace or code, but not within a string \
+literal. A hash character within a string literal is just a hash character. \
+Since comments are to clarify code and are not interpreted by Python, they \
+may be omitted when typing in examples."
+}], "Text",
+ CellChangeTimes->{{3.724188108355196*^9, 
+  3.724188162250536*^9}},ExpressionUUID->"f6cfbad1-f895-4d4a-b06e-\
+926e48558053"],
+
+Cell[BoxData[{"python", "\n", 
+ RowBox[{"#", " ", "Some", " ", 
+  RowBox[{"examples", ":", "\n", "#"}]}], "\n", "#", "\n", 
+ RowBox[{"#", " ", "this", " ", "is", " ", "the", " ", "first", " ", 
+  "comment"}], "\n", 
+ RowBox[{"spam", " ", "=", " ", 
+  RowBox[{
+  "1", "  ", "#", " ", "and", " ", "this", " ", "is", " ", "the", " ", 
+   "second", " ", "comment"}]}], "\n", 
+ RowBox[{"          ", 
+  RowBox[{
+   RowBox[{"#", " ", "..."}], " ", "and", " ", "now", " ", "a", " ", 
+   RowBox[{"third", "!"}]}]}], "\n", 
+ RowBox[{"text", " ", "=", " ", 
+  "\"\<# This is not a comment because it's inside quotes.\>\""}]}], \
+"FencedCode",
+ CellChangeTimes->{{3.724188176955962*^9, 
+  3.7241881878445168`*^9}},ExpressionUUID->"43e1b591-6459-49b5-9976-\
+906095ae35d1"]
+}, Open  ]]
+},
+WindowSize->{808, 754},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"BTools"}, "MarkdownNotebook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1984, 35, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2567, 59, 155, 3, 62, "Section",ExpressionUUID->"5a8f7c94-4023-4d4f-98e4-5d0016f1f937"],
+Cell[2725, 64, 970, 21, 104, "Text",ExpressionUUID->"80cf2552-9bc7-4897-be38-32400e2db31a"],
+Cell[3698, 87, 800, 15, 127, "Text",ExpressionUUID->"f6cfbad1-f895-4d4a-b06e-926e48558053"],
+Cell[4501, 104, 760, 18, 170, "FencedCode",ExpressionUUID->"43e1b591-6459-49b5-9976-906095ae35d1"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,272 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11393,        264]
+NotebookOptionsPosition[      9364,        228]
+NotebookOutlinePosition[      9795,        245]
+CellTagsIndexPosition[      9752,        242]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"\"\<Title\>\"", "\[Rule]", "\"\<Whetting Your Appetite\>\""}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Slug\>\"", "\[Rule]", "Automatic"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\"\<Path\>\"", "\[Rule]", "\"\<Whetting Your Appetite\>\""}], ",",
+    "\[IndentingNewLine]", 
+   RowBox[{"\"\<ID\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<1\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Date\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Modified\>\"", "\[Rule]", "Now"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Authors\>\"", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Categories\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<python\>\"", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Tags\>\"", "\[Rule]", 
+    RowBox[{"{", "\"\<appetite\>\"", "}"}]}]}], "\[IndentingNewLine]", 
+  "\[RightAssociation]"}]], "Metadata",
+ CellChangeTimes->{{3.7230674328716917`*^9, 3.723067452190956*^9}, {
+   3.7230679580568*^9, 3.7230680128473673`*^9}, {3.7232007087815647`*^9, 
+   3.7232007883818817`*^9}, 3.723201146733818*^9, {3.723203002317672*^9, 
+   3.723203008852455*^9}, {3.723203499603772*^9, 3.7232035545127563`*^9}, {
+   3.723251256681574*^9, 3.723251262240631*^9}, {3.723348490300707*^9, 
+   3.723348528182694*^9}, {3.723434617203232*^9, 3.7234346495926113`*^9}, 
+   3.723434738570012*^9, {3.723435106241599*^9, 3.723435134392212*^9}, {
+   3.7234355085797987`*^9, 3.723435549502858*^9}, {3.723435626994491*^9, 
+   3.723435705605221*^9}, {3.723436653781901*^9, 3.723436668193194*^9}, {
+   3.7241857680746098`*^9, 3.72418586471841*^9}, {3.724185898473641*^9, 
+   3.724185921419598*^9}, 
+   3.724259783352726*^9},ExpressionUUID->"193e9afe-58b0-4309-9e29-\
+8bb496c1c725"],
+
+Cell[CellGroupData[{
+
+Cell["Whetting Your Appetite", "Section",
+ CellChangeTimes->{
+  3.724186393616294*^9},ExpressionUUID->"3d878cfe-ff35-4e70-81bb-\
+fe6eb8c28b15"],
+
+Cell["\<\
+If you do much work on computers, eventually you find that there\
+\[CloseCurlyQuote]s some task you\[CloseCurlyQuote]d like to automate. For \
+example, you may wish to perform a search-and-replace over a large number of \
+text files, or rename and rearrange a bunch of photo files in a complicated \
+way. Perhaps you\[CloseCurlyQuote]d like to write a small custom database, or \
+a specialized GUI application, or a simple game.\
+\>", "Text",
+ CellChangeTimes->{
+  3.7241864004320927`*^9},ExpressionUUID->"b580695d-71c5-40ef-b139-\
+d8600b9cf2c7"],
+
+Cell["\<\
+If you\[CloseCurlyQuote]re a professional software developer, you may have to \
+work with several C/C++/Java libraries but find the usual \
+write/compile/test/re-compile cycle is too slow. Perhaps \
+you\[CloseCurlyQuote]re writing a test suite for such a library and find \
+writing the testing code a tedious task. Or maybe you\[CloseCurlyQuote]ve \
+written a program that could use an extension language, and you don\
+\[CloseCurlyQuote]t want to design and implement a whole new language for \
+your application.\
+\>", "Text",
+ CellChangeTimes->{
+  3.724186406031806*^9},ExpressionUUID->"96b5ae73-dc2c-44b0-b4cf-\
+7b839ba40826"],
+
+Cell["Python is just the language for you.", "Text",
+ CellChangeTimes->{
+  3.724186410575326*^9},ExpressionUUID->"9574cad0-8f96-4d87-b786-\
+8a9321b79a86"],
+
+Cell["\<\
+You could write a Unix shell script or Windows batch files for some of these \
+tasks, but shell scripts are best at moving around files and changing text \
+data, not well-suited for GUI applications or games. You could write a \
+C/C++/Java program, but it can take a lot of development time to get even a \
+first-draft program. Python is simpler to use, available on Windows, Mac OS \
+X, and Unix operating systems, and will help you get the job done more \
+quickly.\
+\>", "Text",
+ CellChangeTimes->{
+  3.724186414534481*^9},ExpressionUUID->"98012ace-b27d-4eb8-9663-\
+39ee57ef4bf3"],
+
+Cell[TextData[{
+ "Python is simple to use, but it is a real programming language, offering \
+much more structure and support for large programs than shell scripts or \
+batch files can offer. On the other hand, Python also offers much more error \
+checking than C, and, being a v",
+ StyleBox["ery-high-level language",
+  FontSlant->"Italic"],
+ ", it has high-level data types built in, such as flexible arrays and \
+dictionaries. Because of its more general data types Python is applicable to \
+a much larger problem domain than Awk or even Perl, yet many things are at \
+least as easy in Python as in those languages."
+}], "Text",
+ CellChangeTimes->{
+  3.724186419960124*^9},ExpressionUUID->"05b1769a-d803-48a7-9736-\
+f2cccc725c22"],
+
+Cell["\<\
+Python allows you to split your program into modules that can be reused in \
+other Python programs. It comes with a large collection of standard modules \
+that you can use as the basis of your programs \[LongDash] or as examples to \
+start learning to program in Python. Some of these modules provide things \
+like file I/O, system calls, sockets, and even interfaces to graphical user \
+interface toolkits like Tk.\
+\>", "Text",
+ CellChangeTimes->{
+  3.724186438103449*^9},ExpressionUUID->"5b2766d2-597e-4fcb-9f22-\
+076eeab48f35"],
+
+Cell["\<\
+Python is an interpreted language, which can save you considerable time \
+during program development because no compilation and linking is necessary. \
+The interpreter can be used interactively, which makes it easy to experiment \
+with features of the language, to write throw-away programs, or to test \
+functions during bottom-up program development. It is also a handy desk \
+calculator.\
+\>", "Text",
+ CellChangeTimes->{
+  3.7241864436313667`*^9},ExpressionUUID->"53a36998-847c-4879-9594-\
+e4e519f9e416"],
+
+Cell["\<\
+Python enables programs to be written compactly and readably. Programs \
+written in Python are typically much shorter than equivalent C, C++, or Java \
+programs, for several reasons:\
+\>", "Text",
+ CellChangeTimes->{
+  3.724186449134804*^9},ExpressionUUID->"44f04f54-6f66-474f-b4cc-\
+27d3d348c499"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+the high-level data types allow you to express complex operations in a single \
+statement;\
+\>", "Item",
+ CellChangeTimes->{
+  3.72418645566153*^9},ExpressionUUID->"eba3cee5-d282-4dd4-85ae-40cac01bce55"],
+
+Cell["\<\
+statement grouping is done by indentation instead of beginning and ending \
+brackets;\
+\>", "Item",
+ CellChangeTimes->{
+  3.724186456390153*^9},ExpressionUUID->"2994a11f-e514-4dcf-8612-\
+a26424f208d3"],
+
+Cell["no variable or argument declarations are necessary.", "Item",ExpressionUUID->"8c1b6491-3aa0-471a-821c-5c0bf729a488"]
+}, Open  ]],
+
+Cell["\<\
+Python is extensible: if you know how to program in C it is easy to add a new \
+built-in function or module to the interpreter, either to perform critical \
+operations at maximum speed, or to link Python programs to libraries that may \
+only be available in binary form (such as a vendor-specific graphics \
+library). Once you are really hooked, you can link the Python interpreter \
+into an application written in C and use it as an extension or command \
+language for that application.\
+\>", "Text",
+ CellChangeTimes->{
+  3.7241864721506977`*^9},ExpressionUUID->"0d12fe82-f93d-49c3-83bd-\
+a96a2a388590"],
+
+Cell["\<\
+By the way, the language is named after the BBC show \
+\[OpenCurlyDoubleQuote]Monty Python\[CloseCurlyQuote]s Flying Circus\
+\[CloseCurlyDoubleQuote] and has nothing to do with reptiles. Making \
+references to Monty Python skits in documentation is not only allowed, it is \
+encouraged!\
+\>", "Text",
+ CellChangeTimes->{
+  3.724186480054083*^9},ExpressionUUID->"3726a6a9-a06b-47b7-9109-\
+5c0c40314e9a"],
+
+Cell["\<\
+Now that you are all excited about Python, you\[CloseCurlyQuote]ll want to \
+examine it in some more detail. Since the best way to learn a language is to \
+use it, the tutorial invites you to play with the Python interpreter as you \
+read.\
+\>", "Text",
+ CellChangeTimes->{
+  3.7241864859104567`*^9},ExpressionUUID->"2fea008a-9fb5-4225-a491-\
+507ce41131bf"],
+
+Cell["\<\
+In the next chapter, the mechanics of using the interpreter are explained. \
+This is rather mundane information, but essential for trying out the examples \
+shown later.\
+\>", "Text",
+ CellChangeTimes->{
+  3.724186492214325*^9},ExpressionUUID->"93126a5c-876d-4f03-89cd-\
+8dfd5f950a16"],
+
+Cell["\<\
+The rest of the tutorial introduces various features of the Python language \
+and system through examples, beginning with simple expressions, statements \
+and data types, through functions and modules, and finally touching upon \
+advanced concepts like exceptions and user-defined classes.\
+\>", "Text",
+ CellChangeTimes->{
+  3.724186496670072*^9},ExpressionUUID->"279eb70b-e7d5-4303-9de6-\
+4190f6036aae"]
+}, Open  ]]
+},
+WindowSize->{808, 754},
+WindowMargins->{{16, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"BTools"}, "MarkdownNotebook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1851, 32, 259, "Metadata",ExpressionUUID->"193e9afe-58b0-4309-9e29-8bb496c1c725"],
+Cell[CellGroupData[{
+Cell[2434, 56, 143, 3, 62, "Section",ExpressionUUID->"3d878cfe-ff35-4e70-81bb-fe6eb8c28b15"],
+Cell[2580, 61, 556, 10, 104, "Text",ExpressionUUID->"b580695d-71c5-40ef-b139-d8600b9cf2c7"],
+Cell[3139, 73, 638, 12, 104, "Text",ExpressionUUID->"96b5ae73-dc2c-44b0-b4cf-7b839ba40826"],
+Cell[3780, 87, 154, 3, 35, "Text",ExpressionUUID->"9574cad0-8f96-4d87-b786-8a9321b79a86"],
+Cell[3937, 92, 592, 11, 127, "Text",ExpressionUUID->"98012ace-b27d-4eb8-9663-39ee57ef4bf3"],
+Cell[4532, 105, 732, 14, 127, "Text",ExpressionUUID->"05b1769a-d803-48a7-9736-f2cccc725c22"],
+Cell[5267, 121, 541, 10, 104, "Text",ExpressionUUID->"5b2766d2-597e-4fcb-9f22-076eeab48f35"],
+Cell[5811, 133, 518, 10, 104, "Text",ExpressionUUID->"53a36998-847c-4879-9594-e4e519f9e416"],
+Cell[6332, 145, 308, 7, 58, "Text",ExpressionUUID->"44f04f54-6f66-474f-b4cc-27d3d348c499"],
+Cell[CellGroupData[{
+Cell[6665, 156, 213, 5, 32, "Item",ExpressionUUID->"eba3cee5-d282-4dd4-85ae-40cac01bce55"],
+Cell[6881, 163, 211, 6, 32, "Item",ExpressionUUID->"2994a11f-e514-4dcf-8612-a26424f208d3"],
+Cell[7095, 171, 122, 0, 32, "Item",ExpressionUUID->"8c1b6491-3aa0-471a-821c-5c0bf729a488"]
+}, Open  ]],
+Cell[7232, 174, 615, 11, 127, "Text",ExpressionUUID->"0d12fe82-f93d-49c3-83bd-a96a2a388590"],
+Cell[7850, 187, 412, 9, 58, "Text",ExpressionUUID->"3726a6a9-a06b-47b7-9109-5c0c40314e9a"],
+Cell[8265, 198, 367, 8, 58, "Text",ExpressionUUID->"2fea008a-9fb5-4225-a491-507ce41131bf"],
+Cell[8635, 208, 295, 7, 58, "Text",ExpressionUUID->"93126a5c-876d-4f03-89cd-8dfd5f950a16"],
+Cell[8933, 217, 415, 8, 81, "Text",ExpressionUUID->"279eb70b-e7d5-4303-9de6-4190f6036aae"]
+}, Open  ]]
+}
+]
+*)
+
