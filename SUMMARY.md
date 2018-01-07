@@ -2,11 +2,7 @@
 
 <a id="whetting-your-appetite" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
 
-# Whetting Your Appetite
-
-
-
-* [Whetting Your Appetite](1-whetting-your-appetite.md)
+# [Whetting Your Appetite](1-whetting-your-appetite.md)
 
 <a id="using-the-python-interpreter" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
 
@@ -14,9 +10,7 @@
 
 <a id="invoking-the-interpreter" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
 
-## Invoking the Interpreter
-
-* [Invoking the Interpreter](2-using-the-interpreter/1-invoking-the-interpreter.md)
+## [Invoking the Interpreter](2-using-the-interpreter/1-invoking-the-interpreter.md)
 
 * [Argument Passing](2-using-the-interpreter/1-invoking-the-interpreter/1-argument-passing.md)
 
@@ -30,16 +24,10 @@
 
 <a id="an-informal-introduction-to-python" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
 
-# An Informal Introduction to Python
-
-
-
-* [An Informal Introduction to Python](3-an-informal-introduction-to-python/an-informal-introduction-to-python.md)
+# [An Informal Introduction to Python](3-an-informal-introduction-to-python/an-informal-introduction-to-python.md)
 
 <a id="using-python-as-a-calculator" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
 
-## Using Python as a Calculator
-
-* [Using Python as a Calculator](3-an-informal-introduction-to-python/1-using-python-as-a-calculator.md)
+## [Using Python as a Calculator](3-an-informal-introduction-to-python/1-using-python-as-a-calculator.md)
 
 * [Numbers](3-an-informal-introduction-to-python/1-using-python-as-a-calculator/1-numbers.md)
