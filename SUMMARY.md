@@ -1,6 +1,8 @@
 * [Introduction](README.md)
 
+<a id="whetting-your-appetite" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
 
+# Whetting Your Appetite
 
 
 
@@ -32,12 +34,12 @@
 
 
 
-* [Preface](3-an-informal-introduction-to-python/intro.md)
-
-* [Using Python as a Calculator](3-an-informal-introduction-to-python/1-using-python-as-a-calculator.md)
+* [An Informal Introduction to Python](3-an-informal-introduction-to-python/an-informal-introduction-to-python.md)
 
 <a id="using-python-as-a-calculator" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
 
 ## Using Python as a Calculator
+
+* [Using Python as a Calculator](3-an-informal-introduction-to-python/1-using-python-as-a-calculator.md)
 
 * [Numbers](3-an-informal-introduction-to-python/1-using-python-as-a-calculator/1-numbers.md)

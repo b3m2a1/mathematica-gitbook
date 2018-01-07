@@ -1,9 +1,9 @@
 Title: Using Python as a Calculator
 Authors: 
 Categories: python
-Date: 2018-01-06 12:22:22
+Date: 2018-01-06 18:06:17
 ID: 3.1
-Modified: 2018-01-06 12:22:22
+Modified: 2018-01-06 18:06:17
 Path: An Informal Introduction to Python/Using Python as a Calculator
 Slug: using-python-as-a-calculator
 Tags: introduction

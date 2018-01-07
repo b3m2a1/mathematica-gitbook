@@ -1,16 +1,12 @@
 Title: An Informal Introduction to Python
 Authors: 
 Categories: python
-Date: 2018-01-06 12:23:34
-ID: 3
-Modified: 2018-01-06 12:23:34
+Date: 2018-01-06 18:05:55
+ID: 3.0
+Modified: 2018-01-06 18:05:55
 Path: An Informal Introduction to Python
 Slug: an-informal-introduction-to-python
 Tags: introduction
-
-<a id="an-informal-introduction-to-python" style="width:0;height:0;margin:0;padding:0;">&zwnj;</a>
-
-# An Informal Introduction to Python
 
 In the following examples, input and output are distinguished by the presence or absence of prompts ( [>>>](https://docs.python.org/3/glossary.html#term)  and  […](https://docs.python.org/3/glossary.html#term-1) ): to repeat the example, you must type everything after the prompt, when the prompt appears; lines that do not begin with a prompt are output from the interpreter. Note that a secondary prompt on a line by itself in an example means you must type a blank line; this is used to end a multi-line command.
 

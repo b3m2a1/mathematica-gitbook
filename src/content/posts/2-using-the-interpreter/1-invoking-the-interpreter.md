@@ -1,9 +1,9 @@
 Title: Invoking the Interpreter
 Authors: 
 Categories: python
-Date: 2018-01-05 17:02:48
+Date: 2018-01-06 18:05:11
 ID: 2.1
-Modified: 2018-01-05 17:02:48
+Modified: 2018-01-06 18:05:11
 Path: Using the Python Interpreter/Invoking the Interpreter
 Slug: invoking-the-interpreter
 Tags: interpreter
